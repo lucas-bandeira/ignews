@@ -26,7 +26,7 @@ export const authOptions = {
             q.Not(
               q.Match(
                 q.Index('user_by_email'),
-                q.Casefold(user.email)
+                q.Casefold(email)
               )
             ),
             q.Create(
@@ -36,7 +36,7 @@ export const authOptions = {
             q.Get(
               q.Match(
                 q.Index('user_by_email'),
-                q.Casefold(user.email)
+                q.Casefold(email)
               )
             )
           )
