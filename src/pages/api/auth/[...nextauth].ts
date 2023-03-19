@@ -44,7 +44,7 @@ export const authOptions = {
         return true
       }catch(e) {
         console.log('e: ',e)
-        return true
+        return false
       }
     }
   }
